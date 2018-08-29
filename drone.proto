@@ -4,6 +4,7 @@ message Position{
     required    string      id  = 1;
     required    float       lat = 2;
     required    float       lon = 3;
-    optional    float       spd = 4;
-    optional    float       alt = 5;
+    required    float       spd = 4;
+    required    uint64      ts  = 5;
+    optional    float       alt = 6;
 }

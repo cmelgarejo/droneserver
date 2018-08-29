@@ -11,8 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "cluster": "^0.7.7",
+    "express": "^4.16.3",
     "geolocation-utils": "^1.1.1",
     "mqtt": "^2.18.3",
-    "protobufjs": "^6.8.8"
+    "protobufjs": "^6.8.8",
+    "pug": "^2.0.3",
+    "uuid": "^3.3.2"
   }
 }

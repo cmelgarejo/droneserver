@@ -9,7 +9,9 @@ COPY --chown=droneserver:nogroup package.json /home/droneserver
 RUN npm install
 
 # Bundle app source
-COPY --chown=droneserver:nogroup . /home/droneserver
+COPY --chown=droneserver:nogroup server.js drone.proto /home/droneserver/
+COPY --chown=droneserver:nogroup views/ /home/droneserver/views/
 
+EXPOSE 3000
 # Start the app
 CMD [ "node", "server.js" ]

@@ -1,0 +1,20 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table {
+  border-collapse: collapse;
+}
+tbody td {
+  padding: 20pt;
+  text-align: center;
+  border: 1pt #fefefe solid;
+}
+tbody tr {
+  background-color: #4c8ee5;
+  color: #fff;
+  border: none;
+}
+
+.warning {
+  background-color: #e5484c !important;
+}

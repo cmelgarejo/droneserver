@@ -1,0 +1,28 @@
+doctype html
+h1 Drone List
+
+head
+  meta(http-equiv="refresh" content="3")
+  style
+    include style.css
+
+div
+  if drones.length > 0
+    table
+      thead
+        tr: th ID
+          th Latitude
+          th Longitude
+          th Speed
+          th Altitude
+          th Timestamp
+      tbody
+        each drone in drones
+          tr(class={"warning": drone.dt > 9999}): td=drone.id
+            td=drone.lat
+            td=drone.lon
+            td=drone.spd
+            td=drone.alt
+            td=new Date(Number(drone.ts)).toLocaleString()
+  else
+    p no drones have reported...yet!
