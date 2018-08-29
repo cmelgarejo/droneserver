@@ -1,5 +1,7 @@
 # Drone server (+ simulated drones)
 
+POC project on how to manage a small drone fleet getting their GPS positions, also able to extend with command queueing, using mqtt as message broker along with protobuf for serialization, express and pugjs to serve a simple dashboard/page to look at all drones and also an endpoint for filter said drones with `/{groupId}`
+
 MQTT + Protobuf = :heart:
 
 ## Protocol
@@ -56,31 +58,32 @@ The message is serialized and encoded as a buffer stream of bytes and so we can 
 
 Initializes the a MQTT client and an array of reporting drones that will report every 3 seconds to the MQTT broker.
 
-
-
 Group
+
 - id
 - description
 
 Drone
+
 - id
 - groupId (1:1)
 - Pos
 
 Assumptions:
+
 - if a drone doesn't belong to any group should autoassign one
 - how many groups do he server has? one group, do groups have limits? should at last have 3
 
 groups: [ {
-    id, ...whatever
+id, ...whatever
 } ]
 
 groupDrone: [{
-    droneId, groupId
+droneId, groupId
 }]
 
 drone: [
-    {
-        id, position
-    }
+{
+id, position
+}
 ]
