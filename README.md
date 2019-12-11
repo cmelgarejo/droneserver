@@ -8,7 +8,7 @@ MQTT + Protobuf = :heart:
 
 [MQTT.org](https://mqtt.org/)
 
-![MQTT stack](https://www.hivemq.com/wp-content/uploads/mqtt-tcp-ip-stack.png)
+![MQTT stack](https://www.hivemq.com/img/freedom-to-run-anywhere.jpg)
 
 ```text
 The MQTT connection is always between one client and the broker. Clients never connect to each other directly. To initiate a connection, the client sends a CONNECT message to the broker. The broker responds with a CONNACK message and a status code. Once the connection is established, the broker keeps it open until the client sends a disconnect command or the connection breaks.
