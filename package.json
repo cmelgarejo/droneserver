@@ -15,7 +15,7 @@
     "geolocation-utils": "^1.2.1",
     "mqtt": "^2.18.8",
     "protobufjs": "^6.8.8",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "uuid": "^3.3.2"
   }
 }
