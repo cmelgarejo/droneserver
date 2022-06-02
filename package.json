@@ -14,7 +14,7 @@
     "express": "^4.16.4",
     "geolocation-utils": "^1.2.1",
     "mqtt": "^2.18.8",
-    "protobufjs": "^6.8.8",
+    "protobufjs": "^6.11.3",
     "pug": "^2.0.3",
     "uuid": "^3.3.2"
   }
